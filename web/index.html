@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultório Odontológico</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#sobre" aria-label="Sobre o Consultório">Sobre o Consultório</a></li>
+                <li><a href="#profissionais" aria-label="Nossos Profissionais">Nossos Profissionais</a></li>
+                <li><a href="#agendamento" aria-label="Agendamento">Agendamento</a></li>
+                <li><a href="#contato" aria-label="Contato">Contato</a></li>
+                <li><a href="#area-cliente" aria-label="Área do Cliente">Área do Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h1>Sobre o Consultório</h1>
+            <p>O nosso consultório é especializado em oferecer 
+            atendimento de qualidade e excelência em todos os tratamentos odontológicos. 
+            Contamos com uma equipe de profissionais altamente qualificados e equipamentos 
+            de última geração para garantir a saúde bucal de nossos pacientes.</p>
+            <p>Nossa missão é proporcionar um ambiente acolhedor e 
+            confortável para os nossos pacientes, oferecendo um atendimento personalizado e 
+            um tratamento individualizado de acordo com as necessidades de cada um.</p>
+            <p>Atuamos nas áreas de:</p>
+            <ul>
+                <li>Clínica Geral</li>
+                <li>Implantodontia</li>
+                <li>Ortodontia</li>
+                <li>Endodontia</li>
+                <li>Periodontia</li>
+                <li>Odontopediatria</li>
+            </ul>
+        </section>
+        <section id="profissionais">
+            <h1>Nossos Profissionais</h1>
+            <p>Conheça nossa equipe de profissionais altamente 
+            qualificados:</p>
+            <ul>
+                <li>
+                    <h2>Dr. João Silva</h2>
+                    <p>Especialista em Implantes Dentários</p>
+                </li>
+                <li>
+                    <h2>Dra. Maria Santos</h2>
+                    <p>Especialista em Ortodontia</p>
+                </li>
+                <li>
+                    <h2>Dr. Pedro Costa</h2>
+                    <p>Especialista em Endodontia</p>
+                </li>
+                <li>
+                    <h2>Dra. Ana Oliveira</h2>
+                    <p>Especialista em Odontopediatria</p>
+                </li>
+            </ul>
+        </section>
+        <section id="agendamento">
+            <h1>Agendamento</h1>
+            <form id="form-agendamento" action="agendamento.php" method="POST">
+                <h2>Agende sua consulta</h2>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="horario">Horário:</label>
+                <select id="horario" name="horario" required>
+                    <option value="">Selecione um horário</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <input type="submit" value="Agendar">
+            </form>
+        </section>
+        <section id="contato">
+            <h1>Contato</h1>
+            <p>Entre em contato conosco para mais informações:</p>
+            <p>Telefone: (XX) XXXX-XXXX</p>
+            <p>E-mail: contato@consultorioodontologico.com</p>
+            <p>Endereço: Rua XXXX, nº XX - Cidade, Estado</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dXXXXX!2dXX.XXXXXX!3dXX.XXXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xXXX!2sConsult%C3%B3rio%20Odontol%C3%B3gico!5e0!3m2!1spt-BR!2sbr!4vXXX" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section id="area-cliente">
+            <h1>Área do Cliente</h1>
+            <form id="form-login" action="login.php" method="POST">
+                <h2>Login</h2>
+                <label for="email-login">E-mail:</label>
+                <input type="email" id="email-login" name="email-login" required>
+
+                <label for="senha-login">Senha:</label>
+                <input type="password" id="senha-login" name="senha-login" required>
+
+                <input type="submit" value="Entrar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Consultório Odontológico. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
